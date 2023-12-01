@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed properties en Vue 3</title>
+</head>
+<body>`
+    <div id="app">
+        <h3>{{title}}</h3>
+        <input type="text" v-model="operator1" /> +
+        <input type="text" v-model="operator2" /> = {{ resultSum }}
+        <input type="text" v-model="operator3" /> - 
+        <input type="text" v-model="operator4" /> = {{ resultSub }}
+    </div>
+
+    <ul id="myULContainer" class="console"></ul>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./computed.js"></script>
+</body>
+</html>
