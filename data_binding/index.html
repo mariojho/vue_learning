@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Binding en Vue 3</title>
+</head>
+<body>`
+    <h1>Mi blog en Vue</h1>
+        <div id="app" class="flex-item flex-item-content">
+            <h2>Nueva entrada</h2>        
+            <h3>Título</h3>
+            <input v-model="datos.title" placeholder="Write a title">
+            <h3>Entrada</h3>
+            <textarea cols="50" v-model="datos.post" placeholder="Write a post"></textarea>            
+            <h2>{{datos.title}}</h2>
+            <p>{{datos.post}}</p>
+            <div class="flex-container">      
+                <div class="flex-item flex-item-content">
+                    <h2>Contenido</h2>
+                    <h3>{{datos.title1}}</h3>{{datos.post1}}
+                    <h3>{{datos.title2}}</h3>{{datos.post2}}
+                    <h3>{{datos.title3}}</h3>{{datos.post3}}
+                </div>
+                <div class="flex-item flex-item-summary">
+                    <h2>{{message}}</h2>
+                    <ul class="summary">
+                        <li class="item">{{datos.title1}}</li>
+                        <li class="item">{{datos.title2}}</li>
+                        <li class="item">{{datos.title3}}</li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+
+        
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./data_binding.js"></script>
+</body>
+</html>
