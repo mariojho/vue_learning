@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varias instancias en Vue 3</title>
+</head>
+<body>
+    <h1>Mi Blog en VueJS</h1>
+    <div class="flex-container">
+        <div id="app" class="flex-item flex-item-content">
+            <h2>Content</h2>
+            
+            <h3>{{ datos.trip1 }}</h3>
+            {{datos.post1}}
+
+            <h3>{{datos.trip2}}</h3>
+            {{datos.post2}}
+
+            <h3>{{datos.trip3}}</h3>
+            {{datos.post3}}            
+        </div>
+
+        <div id="app1" class="flex-item flex-item-summary">
+            <h2>{{ datos.message }}</h2>
+            <ul class="summary">
+                <li class="item">{{datos.title1}}</li>
+                <li class="item">{{datos.title2}}</li>
+                <li class="item">{{datos.title3}}</li>
+            </ul>
+        </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./instancias.js"></script>
+</body>
+</html>
