@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instancia en Vue 3</title>
+</head>
+<body>
+    <h1>Mi Blog en VueJS</h1>
+    <div class="flex-container">
+        <div id="app" class="flex-item flex-item-content">
+            <h2>Content</h2>
+            
+            <h3>{{ datos.title1 }}</h3>
+            {{datos.post1}}
+
+            <h3>{{datos.title2}}</h3>
+            {{datos.post2}}
+
+            <h3>{{datos.title3}}</h3>
+            {{datos.post3}}            
+        </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./instancia.js"></script>
+</body>
+</html>
